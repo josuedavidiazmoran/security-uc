@@ -32,7 +32,8 @@ public class UsuarioService implements UserDetailsService{
 				.stream()
 				.map(role ->new SimpleGrantedAuthority(role.getNombre()))
 				.collect(Collectors.toList());
-		return new User(usuario.getUsername(), usuario.getPassword(), usuario.getEstado(), true, true, true, authorities);
+		return new User(usuario.getUsername(), usuario.getPassword(), usuario.getEstado(), true, 
+				true, true, authorities);
 	}
 
 }
