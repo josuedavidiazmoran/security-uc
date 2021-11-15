@@ -1,4 +1,4 @@
-package uc.us_security;
+package uc.us_security.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
